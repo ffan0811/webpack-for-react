@@ -6,9 +6,9 @@
 	"author": "“ffan0811” <“ffan0811@gmail.com”>",
 	"license": "MIT",
 	"scripts": {
-		"dev": "webpack-dev-server --config webpack.config.development.js",
+		"dev": "webpack-dev-server --env.env=dev",
 		"prebuild": "rimraf dist",
-		"build": "cross-env NODE_ENV=production webpack -p --config webpack.config.production.js"
+		"build": "cross-env NODE_ENV=production webpack -p --env.env=prod"
 	},
 	"dependencies": {
 		"prop-types": "^15.6.2",
@@ -27,6 +27,7 @@
 		"@babel/preset-react": "^7.0.0",
 		"autoprefixer": "^9.3.1",
 		"babel-loader": "^8.0.4",
+		"chalk": "^2.4.1",
 		"cross-env": "^5.2.0",
 		"css-loader": "^1.0.1",
 		"cssnano": "^4.1.7",
@@ -38,7 +39,9 @@
 		"rimraf": "^2.6.2",
 		"style-loader": "^0.23.1",
 		"webpack": "^4.26.0",
+		"webpack-bundle-analyzer": "^3.0.3",
 		"webpack-cli": "^3.1.2",
-		"webpack-dev-server": "^3.1.10"
+		"webpack-dev-server": "^3.1.10",
+		"webpack-merge": "^4.1.4"
 	}
 }
