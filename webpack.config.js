@@ -1,5 +1,6 @@
 const buildValidations = require('./build-utils/build-validations');
 const commonConfig = require('./build-utils/webpack.common');
+
 const webpackMerge = require('webpack-merge');
 // We can include Webpack plugins, through addons, that do not need to run
 // every time we are developing. We will see an example when we set up

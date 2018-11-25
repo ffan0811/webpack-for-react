@@ -1,6 +1,8 @@
 const commonPaths = require('./common-paths');
+
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 const config = {
   mode: 'production',
   entry: {
