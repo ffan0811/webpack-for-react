@@ -6,14 +6,14 @@ import Home from './Home';
 import Loading from './Loading';
 
 const AsyncDynamicPAge = importedComponent(
-    () => import('./DynamicPage'),
+    () => import(/* webpackChunkName:'DynamicPage' */ './DynamicPage'),
     {
         LoadingComponent: Loading
     }
 );
 
 const AsyncNoMatch = importedComponent(
-    () => import('./NoMatch'),
+    () => import(/* webpackChunkName:'NoMatch' */ './NoMatch'),
     {
         LoadingComponent: Loading
     }

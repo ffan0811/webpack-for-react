@@ -27,7 +27,6 @@ const config = {
               modules: true,
               camelCase: true,
               sourceMap: true,
-              localIdentName: '[name]__[hash:base64:5]'
             }
           },
           {
@@ -36,7 +35,9 @@ const config = {
           {
             loader: "sass-loader",
             options: {
-              sourceMap: true
+              sourceMap: true,
+              modules: true,
+              localIdentName: '[name]__[hash:base64:5]'
             },
           }
         ]
