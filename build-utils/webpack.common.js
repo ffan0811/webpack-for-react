@@ -8,6 +8,12 @@ const config = {
     path: commonPaths.outputPath,
     publicPath: '/'
   },
+  resolve: {
+    modules: [
+      commonPaths.appEntry,
+      "node_modules"
+    ]
+  },
   module: {
     rules: [
       {
