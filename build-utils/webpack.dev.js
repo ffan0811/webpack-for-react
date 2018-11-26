@@ -2,7 +2,7 @@ const commonPaths = require('./common-paths');
 
 const webpack = require('webpack');
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3100;
 
 const config = {
   mode: 'development',
@@ -26,7 +26,8 @@ const config = {
             options: {
               modules: true,
               camelCase: true,
-              sourceMap: true
+              sourceMap: true,
+              localIdentName: '[name]__[hash:base64:5]'
             }
           },
           {
