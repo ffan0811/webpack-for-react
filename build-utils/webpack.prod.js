@@ -25,6 +25,8 @@ const config = {
                 modules: true,
                 camelCase: true,
                 sourceMap: true,
+                localIdentName: '[name]__[local]__[hash:base64:5]'
+                
               }
             },
             {
@@ -36,7 +38,7 @@ const config = {
                 modules: true,
                 importLoaders: 1,
                 sourceMap: true,
-                localIdentName: '[name]__[hash:base64:5]'
+                localIdentName: '[name]__[local]__[hash:base64:5]'
               },
             }
           ]
