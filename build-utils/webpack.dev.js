@@ -16,7 +16,7 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.(css|scss)$/,
         use: [
           {
             loader: 'style-loader'
@@ -28,6 +28,11 @@ const config = {
               camelCase: true,
               sourceMap: true
             }
+          }, {
+              loader: "sass-loader",
+              options: {
+              sourceMap: true
+            },
           }
         ]
       }
