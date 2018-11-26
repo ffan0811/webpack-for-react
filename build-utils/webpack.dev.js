@@ -28,9 +28,13 @@ const config = {
               camelCase: true,
               sourceMap: true
             }
-          }, {
-              loader: "sass-loader",
-              options: {
+          },
+          {
+            loader: 'postcss-loader'
+          },
+          {
+            loader: "sass-loader",
+            options: {
               sourceMap: true
             },
           }
