@@ -11,7 +11,7 @@ const Home = () => {
     	<Layout>
      		<p className={cx('style11')}>Hsello World of React <span>and Webpack!</span></p>
       		<p>
-        		<Link to="/dynamic">Navigate to Dynamic Page</Link>
+        		<Link to="/dynamic">zzNddasdfsdavigate to Dynamic Page</Link>
       		</p>
     	</Layout>
   	);

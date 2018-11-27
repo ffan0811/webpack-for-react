@@ -27,7 +27,7 @@ const config = {
               modules: true,
               camelCase: true,
               sourceMap: true,
-              localIdentName: '[name]__[local]__[hash:base64:5]'
+              localIdentName: '[name]__[local]__[hash:base64:5]',
             }
           },
           {
@@ -38,10 +38,23 @@ const config = {
             options: {
               sourceMap: true,
               modules: true,
-              localIdentName: '[name]__[local]__[hash:base64:5]'
+              localIdentName: '[name]__[local]__[hash:base64:5]',
+              includePaths: [
+                `${commonPaths.appEntry}/styles`
+              ]
             },
           }
         ]
+      }, {
+        test: /\.(png|jpg|gif|svg|mp4|woff|woff2|eot|ttf|otf)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[ext]'
+              }
+            }
+          ]
       }
     ]
   },

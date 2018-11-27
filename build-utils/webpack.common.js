@@ -23,18 +23,18 @@ const config = {
       }
     ]
   },
-  optimization: {
-    splitChunks: {
-      cacheGroups: {
-        vendor: {
-          chunks: 'initial',
-          test: 'vendor',
-          name: 'vendor',
-          enforce: true
-        }
-      }
-    }
-  },
+  // optimization: {
+  //   splitChunks: {
+  //     cacheGroups: {
+  //       vendor: {
+  //         chunks: 'initial',
+  //         test: 'vendor',
+  //         name: 'vendor',
+  //         enforce: true
+  //       }
+  //     }
+  //   }
+  // },
   plugins: [
     new HtmlWebpackPlugin({
       template: 'public/index.html',
