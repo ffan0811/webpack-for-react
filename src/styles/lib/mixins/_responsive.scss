@@ -1,0 +1,36 @@
+@mixin responsive() {
+  width: 1200px;
+  margin: 0 auto;
+  transition: width .3s ease-in-out;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  animation-duration: .3s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  animation-name: fadeIn;
+
+  // width 1200px 미만
+  @include media("<huge") {
+    width: 1024px;
+  }
+
+  // width 1024px 미만
+  @include media("<large") {
+    width: calc(100% - 5rem);
+  }
+
+  // width 768px 미만
+  @include media("<medium") {
+  	width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}

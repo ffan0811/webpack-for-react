@@ -1,0 +1,51 @@
+@import 'utils';
+
+.hamburger-wrapper {
+ 	height: $headerMobile;
+  	cursor: pointer;
+  	z-index: z-index-for('hamburger');
+  	position: absolute;
+  	right: 0;
+  	top: 0;
+  	transition: all .3s ease-in;
+  	padding:1.2rem 1.5rem;
+  	
+  	.hamburger {
+  		width: 2.5rem;
+  		height: 100%;
+  		position: relative;
+  		span {
+	  		background: $black;
+	  		height: 0.2rem;
+	  		width:100%;
+	  		position: absolute;
+	  		top: 0;
+	  		left: 0;
+	  		cursor: pointer;
+	  		transition: all .3s ease-in;
+	  		&:nth-child(2) {
+	  			top: 0.7rem;
+	  		}
+	  		&:last-child {
+	  			top: 1.4rem;
+	  		}
+		}
+  	}
+  	&.is-active {
+  		background: transparent;
+  		.hamburger {
+  			span {
+				&:first-child {
+					transform: translateY(7px) translateX(0) rotate(45deg);
+				}
+				&:nth-child(2){
+					opacity: 0;
+				}
+				&:last-child {
+					transform: translateY(-7px) translateX(0) rotate(-45deg);
+				}
+			}
+  		}
+		
+	}
+}

@@ -1,0 +1,47 @@
+@import 'utils';
+
+.toast-container {
+	@include center-align();
+	position: fixed;
+	z-index: z-index-for('modal');
+	min-width: 28.8rem;
+	text-align: center;
+    box-shadow: 0.2rem 0.4rem 1.4rem rgba(47, 20, 20, 0.34);
+    background: $C181818;
+
+		.toaster {
+			background: $C181818;
+		}
+
+    .yes {
+    	border:1px solid $success;
+    }
+
+    .no {
+    	border:1px solid $primary;
+    }
+
+    .warn {
+    	border: 1px solid $error;
+    }
+
+	&.enter {
+        animation-duration: .25s;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+        animation-name: fadeIn;
+    }
+
+    &.leave {
+        animation-duration: .25s;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+        animation-name: fadeOut;
+    }
+	.close {
+		position: absolute;
+		right: 1.6rem;
+		top: 1.6rem;
+		cursor: pointer;
+	}
+}

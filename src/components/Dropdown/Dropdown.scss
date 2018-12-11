@@ -1,0 +1,43 @@
+@import 'utils';
+
+.cover {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+}
+.dropdown {
+	cursor: pointer;
+	position: relative;
+	z-index: 3;
+	
+	.arrow-open {
+		transition: all .3s ease-in;
+		transform: rotate(90deg);
+	}
+
+	.arrow-close {
+		transition: all .3s ease-in;
+		transform: rotate(0);
+	}
+
+	.dropdown-list {
+		@include horizontal-align();
+		width: 100%;
+		bottom: 100%;
+		&.close {
+			opacity: 0;
+			transition: all .2s ease-in;
+			height: 0;
+			overflow: hidden;
+		}
+
+		&.open {
+			opacity: 1;
+			transition: all .2s ease-in;
+			height: 100%;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+@import 'utils';
+
+.accordion-content {
+	transition: .3s all ease-in-out;
+	overflow: hidden;
+	animation-duration: .3s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+
+	&.close {
+		height: 0;
+		animation-name: fadeOut;
+	}
+	&.open {
+		height: 100%;
+		animation-name: fadeIn;
+	}
+}

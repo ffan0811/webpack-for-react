@@ -1,0 +1,17 @@
+@import 'utils';
+
+.fab {
+	position: fixed;
+	right: 1.6rem;
+	bottom: 2.1rem;
+	z-index: z-index-for('fab');
+}
+
+.menu-btn {
+	background: $primary;
+	width: 4.8rem;
+	height: 4.8rem;
+	border-radius: 10rem;
+	@include flex-center();
+	
+}

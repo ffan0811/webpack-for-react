@@ -1,0 +1,32 @@
+@mixin flex-center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin hover() {
+  @media (hover: hover) {
+    &:hover { 
+      @content;
+     }
+  }
+}
+
+@mixin center-align() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+}
+
+@mixin vertical-align() {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+@mixin horizontal-align() {
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+}

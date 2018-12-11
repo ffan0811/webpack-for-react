@@ -1,0 +1,1 @@
+export { default, FakeButton } from './Button';

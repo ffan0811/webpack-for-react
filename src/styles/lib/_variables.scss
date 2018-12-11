@@ -1,0 +1,45 @@
+$breakpoints: (
+  small: 376px, 
+  medium: 768px, 
+  large: 1024px, 
+  huge: 1200px
+);
+
+$z-indexes: (
+  'header': 4,
+  'footer': 4,
+  'fab':3,
+  'modal': 33,
+  'dimmer': 30,
+  'gnb': 31,
+  'hamburger' : 32
+);
+
+$primary : rgba(235, 70, 70, 1); //#eb4646
+
+$white : rgba(255, 255, 255, 1);
+$black : rgba(0, 0, 0, 1);
+
+$C464646 : rgba(70, 70, 70, 1);
+$Cf3f3f3 : rgba(243, 243, 243, 1);
+$C7f7f7f : rgba(127, 127, 127, 1);
+$C9c5454 : rgba(156, 84, 84, 1);
+$C181818 : rgba(24, 24, 24, 1);
+$Cd4d4d4 : rgba(212, 212, 212, 1);
+$C2a2a2a : rgba(42, 42, 42, 1);
+
+$success : rgba(49, 106, 254, 1); //#316afe
+$error : rgba(249, 210, 0, 1); //#f9d200
+$btnDeactive : $C464646;
+$footerDeactive : rgba(153, 84, 84, 1); //9c5454
+
+$regular: 400;
+$thin: $regular - 200;
+$light: $regular - 100;
+$medium: $regular + 100;
+$bold: $regular + 200;
+$fblack: $regular + 400;
+$extra: $regular + 500;
+
+$headerPc: 7.6rem;
+$headerMobile: 4rem;

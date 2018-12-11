@@ -1,0 +1,63 @@
+@import 'utils';
+
+$t: .1s;
+
+.wrapper {
+	border: none;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+	
+	z-index: 31;
+
+	transition: all $t ease;
+	// width: 4.8rem;
+	// height: 4.8rem;
+	// font-size: 1.2rem;
+
+	position: absolute;
+	animation-duration: $t;
+  	animation-fill-mode: forwards;
+  	animation-timing-function: ease-in-out;
+  	animation-name: down;
+	bottom:0;
+	right: 0;
+	opacity: 0;
+
+	a {
+		background: $primary;
+		box-shadow: 0 0 4rem rgba(0, 0, 0, .12),0 1.4rem 1.4rem rgba(0, 0, 0, .2376);
+		border-radius: 10rem;
+		font-weight: $medium;
+		color: $C2a2a2a;
+		@include flex-center();
+		// width: 4rem;
+		// height: 4rem;
+		margin: 0 auto;
+
+	}
+
+	&.active {
+		animation-duration: $t;
+  		animation-fill-mode: forwards;
+  		animation-timing-function: ease-in-out;
+  		animation-name: up;
+
+		&:nth-of-type(1) {
+			animation-delay: $t * 1;
+			bottom: 5rem;
+		}
+		&:nth-of-type(2) {
+			animation-delay: $t * 1.15;
+			bottom: 12.2rem;
+		}
+		&:nth-of-type(3) {
+			animation-delay: $t * 1.25;
+			bottom: 19.4rem;
+		}
+	}
+
+	&.no-ani {
+		animation: none;
+	}
+}

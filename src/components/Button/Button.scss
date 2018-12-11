@@ -1,0 +1,30 @@
+@import 'utils';
+
+.button {
+
+	//default
+	display:inline-block;
+	font-family: inherit;
+	cursor: pointer;
+	border: none;
+    outline: none;
+    padding:0;
+
+    // only for the project
+    background: $primary;
+    color: $white;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	user-select: none;
+    letter-spacing: 0.8px;
+    font-weight: $medium;
+    border-radius: 0.2rem;
+    text-align: center;
+    transition: all .3s ease-in;
+
+	&.disabled {
+		background: $btnDeactive;
+		cursor: not-allowed;
+	}
+
+}
