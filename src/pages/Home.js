@@ -4,7 +4,7 @@ import Layout from 'components/Layout';
 import classNames from 'classnames/bind';
 import styles from './Home.scss';
 
-import SearchBar from '../components/SearchBar';
+import StarsAni from '../components/StarsAni';
 
 
 const cx = classNames.bind(styles);
@@ -17,7 +17,7 @@ const Home = () => {
         		<Link to="/dynamic">zzsNddasdfsdavigate to Dynamic Page</Link>
       		</p>
 			
-			<SearchBar/>
+			<StarsAni/>
 			
     	</Layout>
   	);
